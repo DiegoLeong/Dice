@@ -12,7 +12,7 @@ void mousePressed()
 }
 class Die //models one single dice cube
 {
-	//variable declarations here
+	
 	
 	Die(int x, int y) //constructor
 	{
