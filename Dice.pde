@@ -1,11 +1,12 @@
 void setup()
 {
 	noLoop();
+	size(800,800);
 }
 void draw()
 {
 	background(150);
-	Die myDie = new Die();
+	Die myDie = new Die(40,40);
 	myDie.show();
 }
 void mousePressed()
@@ -18,7 +19,7 @@ class Die //models one single dice cube
 	
 	Die(int x, int y) //constructor
 	{
-		
+	
 	}
 	void roll()
 	{
