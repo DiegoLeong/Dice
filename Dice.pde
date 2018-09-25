@@ -1,6 +1,5 @@
 void setup()
 {
-	noLoop();
 	size(800,800);
 }
 void draw()
@@ -8,7 +7,7 @@ void draw()
 	background(0);
 	noStroke();
 	Die myDie = new Die(40,40);
-	myDie.roll((int)(Math.random()*7));
+	myDie.show((int)(Math.random()*7));
 }
 void mousePressed()
 {
@@ -16,18 +15,15 @@ void mousePressed()
 }
 class Die //models one single dice cube
 {
-	int cX;
-	int cY;
 	Die(int x, int y) //constructor
 	{
-  		x = cX;
-  		y = cY;
+  		
 	}
 	void roll()
 	{
 		 
 	}
-	void show(int rando)
+	void show(int rando,int cX,int cY)
 	{
 		fill(255);
 		rect(50,50,cX,cY,10);
