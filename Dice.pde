@@ -7,17 +7,21 @@ void draw()
 	background(0);
 	noStroke();
 	Die myDie = new Die(40,40);
-	myDie.show((int)(Math.random()*7));
+	myDie.show((int)(Math.random()*7),100,100);
 }
+
 void mousePressed()
 {
 	redraw();
 }
+
 class Die //models one single dice cube
 {
 	Die(int x, int y) //constructor
 	{
-  		
+      
+  		x=cX
+      y=cY
 	}
 	void roll()
 	{
