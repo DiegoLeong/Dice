@@ -1,7 +1,7 @@
 void setup()
 	{
 		size(800,650);
-	  noLoop();
+		noLoop();
 	}
 void draw()
 	{
@@ -24,7 +24,7 @@ void mousePressed()
 	}
 class Die //models one single dice cube
 	{
-	    int rando = (int)(Math.random()*7);
+	  int rando = (int)((Math.random()*6)+1);
       int dieX;
       int dieY;
 	    
@@ -36,17 +36,47 @@ class Die //models one single dice cube
       }
 	    void show()
 	    {
-        fill(255);
-	      rect(dieX,dieY,100,100,20);
+        	fill(255,233,234);
+	     	 rect(dieX,dieY,100,100,20);
         
-        //if statements for ellipses
-        if (rando == 1)
-        {
-          ellipse(dieX,dieY,25,25);
-          fill(255,0,0);
-          text(1,dieX,dieY);
-        }
-         
+        	//if statements for ellipses
+        	if (rando == 1)
+        	{
+          		ellipse(dieX,dieY,25,25);
+         		fill(255,0,0);
+          		text(1,dieX,dieY);
+        	}
+        	if (rando == 2)
+        	{
+          		ellipse(dieX,dieY,25,25);
+          		fill(255,0,0);
+          		text(2,dieX,dieY);
+        	}
+        	if (rando == 3)
+        	{
+          		ellipse(dieX,dieY,25,25);
+          		fill(255,0,0);
+          		text(3,dieX,dieY);
+        	}
+        	if (rando == 4)
+        	{
+          		ellipse(dieX,dieY,25,25);
+          		fill(255,0,0);
+          		text(4,dieX,dieY);
+        	}
+        	if (rando == 5)
+        	{
+          		ellipse(dieX,dieY,25,25);
+          		fill(255,0,0);
+          		text(5,dieX,dieY);
+        	}
+        	if (rando == 6)
+        	{
+          		ellipse(dieX,dieY,25,25);
+          		fill(255,0,0);
+          		text(6,dieX,dieY);
+        	}
+         //end of show
 	    }
 	    void roll()
 	    {
