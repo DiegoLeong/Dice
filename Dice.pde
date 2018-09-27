@@ -24,7 +24,7 @@ void mousePressed()
 	}
 class Die //models one single dice cube
 	{
-	    int rando = (int)(Math.random()*200);
+	    int rando = (int)(Math.random()*7);
       int dieX;
       int dieY;
 	    
@@ -36,11 +36,16 @@ class Die //models one single dice cube
       }
 	    void show()
 	    {
-        fill(rando,43,90);
+        fill(255);
 	      rect(dieX,dieY,100,100,20);
         
         //if statements for ellipses
-        
+        if (rando == 1)
+        {
+          ellipse(dieX,dieY,25,25);
+          fill(255,0,0);
+          text(1,dieX,dieY);
+        }
          
 	    }
 	    void roll()
