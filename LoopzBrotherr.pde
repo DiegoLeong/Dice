@@ -1,4 +1,4 @@
-void setup(){
+/*void setup(){
   size(100,100);
   for(int y=1; y <= 30; y = y+10){
     
@@ -18,4 +18,4 @@ void draw(){
       ellipse(x,y,5,5);
     }
   }
-}
+}*/
