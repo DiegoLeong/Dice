@@ -7,18 +7,24 @@ void setup()
 	}
 void draw()
 	{
+    fill(255);
+    rect(100,20,700,630);
     //your code here such as calling die and die.show, loops etc
     /*Die godie = new Die(50,50);
     godie.show();*/
-    
+   int total = 0;
    for(int y=50; y < 650; y = y+150) //loop for creating columns
     {
       for(int x=50; x<800; x=x+150) //loop for creating rows
       {
         Die godie = new Die(x,y);
         godie.show();
+        total += godie.roll();
       }
     }
+    
+    fill(0);
+    text("Total: "+total,700,630);
 	}
 void mousePressed()
 	{
@@ -36,12 +42,17 @@ class Die //models one single dice cube
       int g = 250;*/
       int dieX;
       int dieY;
-	    
+      
+      	          
 	    Die(int x, int y) //constructor
 	    {
 	      //variable initializations here ex) x=other x 
         dieX = x;
         dieY = y;
+      }
+      int roll()
+      {
+        return(rando);
       }
 	    void show()
 	    {
@@ -114,9 +125,6 @@ class Die //models one single dice cube
         }
          //end of show
 	    }
-	    void roll()
-	    {
-	      //your code here
-	    }
+	    
 
 	}
